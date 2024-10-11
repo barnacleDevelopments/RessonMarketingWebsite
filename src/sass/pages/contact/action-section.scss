@@ -1,0 +1,79 @@
+#contact-page {
+
+  .action-section {
+    background-image: linear-gradient(180deg, $black, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/spacenight.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-size: 170%;
+  }
+
+}
+
+@media screen and (min-width: 280px) {}
+
+@media screen and (min-width: 320px) {}
+
+// tablet landscape
+@media screen and (min-width: 481px) and (orientation: landscape) {
+  #contact-page .action-section {
+    background-position: top left;
+    background-size: cover;
+    background-image: linear-gradient(-90deg, $black, rgb(0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/spacenight.jpg");
+
+    .container {
+      display: flex;
+
+      ul {
+        flex: 1
+      }
+
+      >div {
+        flex: 4
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (orientation: portrait) {
+  #contact-page .action-section {
+    background-position: bottom;
+    background-size: cover;
+    background-image: linear-gradient(-180deg, $black, rgb(0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/spacenight.jpg");
+
+  }
+}
+
+@media screen and (min-width: 769px) and (orientation: landscape) {}
+
+@media screen and (min-width: 769px) and (orientation: portrait) {
+  #contact-page .action-section {
+    background-position: left;
+    background-size: cover;
+    background-image: linear-gradient(-90deg, $black, rgb(0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/spacenight.jpg");
+
+  }
+}
+
+
+@media screen and (min-width: 1025px) {}
+
+@media screen and (min-width: 1201px) {
+  #contact-page .action-section {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    background-image: linear-gradient(-90deg,
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgba(0, 0, 0, 0.568),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)), url("../images/spacenight.jpg");
+  }
+}

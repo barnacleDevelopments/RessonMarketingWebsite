@@ -1,0 +1,83 @@
+#landing-page {
+
+  .action-section {
+    background-image: url("../images/potato_distance_300.jpg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: top;
+    background-size: cover;
+    padding: 50px 0px 50px 0px;
+
+    .action-content {
+      background-color: rgba(0, 0, 0, 0.795);
+      border-radius: 4px;
+      padding: 30px;
+    }
+
+    .container {
+      margin-bottom: 0px;
+    }
+    > div {
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 280px) {}
+
+@media screen and (min-width: 320px) {}
+
+// tablet landscape
+@media screen and (min-width: 481px) and (orientation: landscape) {
+  #landing-page .action-section {
+    background-position: top left;
+    background-size: cover;
+
+    .action-content {
+      padding: 50px;
+    }
+
+    .container {
+      display: flex;
+
+      ul {
+        flex: 1
+      }
+
+      >div {
+        flex: 4;
+
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (orientation: portrait) {
+  #landing-page .action-section {
+    background-position: bottom;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 769px) and (orientation: landscape) {}
+
+@media screen and (min-width: 769px) and (orientation: portrait) {
+  #landing-page .action-section {
+    background-position: left;
+    background-size: cover;
+
+  }
+}
+
+
+@media screen and (min-width: 1025px) {}
+
+@media screen and (min-width: 1201px) {
+  #landing-page .action-section {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left;
+  }
+}

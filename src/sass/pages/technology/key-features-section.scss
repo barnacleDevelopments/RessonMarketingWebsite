@@ -1,0 +1,163 @@
+#technology-keyfeatures {
+    padding: 50px 0px;
+
+    .main-heading {
+        font-size: 1.2rem;
+        display: flex;
+
+        hr {
+            margin-bottom: 40px;
+            border-color: $blue;
+            width: 100%;
+        }
+    }
+
+    h3 {
+        // margin-top: 12px;
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+
+    .feature-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .feature-item {
+        svg {
+            width: 70px;
+            height: fit-content;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 280px) {}
+
+@media screen and (min-width: 320px) {}
+
+// tablet landscape
+@media screen and (min-width: 481px) and (orientation: landscape) {
+    #technology-keyfeatures {
+        .main-heading {
+            justify-content: center;
+        }
+
+        h2 {
+            text-align: center;
+            width: 100%;
+            font-weight: 500;
+        }
+
+        >.feature-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 80px;
+        }
+
+        >.feature-list>.feature-item {
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 100px;
+
+            svg {
+                width: 150px;
+                height: fit-content;
+            }
+        }
+
+        >.feature-list>.feature-item:nth-child(odd) {
+            flex-flow: row-reverse;
+        }
+
+        .feature-item {
+            flex: 3;
+
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (orientation: landscape) {
+    #technology-keyfeatures {
+
+        >.feature-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        >.feature-list>.feature-item {
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-around;
+
+            div {
+                width: 400px;
+            }
+
+            svg {
+                width: 230px;
+                height: fit-content;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+    #technology-keyfeatures {
+        >.feature-list>.feature-item {
+
+            div {
+                width: 500px;
+            }
+
+            svg {
+                width: 250px;
+                height: fit-content;
+            }
+
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 1201px) {
+    #technology-keyfeatures {
+
+        h2 {
+            text-align: center;
+            width: 100%;
+        }
+
+        >.feature-list>.feature-item {
+
+            div {
+                width: 600px;
+            }
+
+            svg {
+                width: 250px;
+                height: fit-content;
+            }
+
+        }
+
+        >.feature-list>.feature-item:nth-child(odd) {
+            flex-flow: row-reverse;
+
+
+        }
+
+    }
+}

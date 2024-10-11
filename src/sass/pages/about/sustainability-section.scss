@@ -1,0 +1,108 @@
+#about-sustainability {
+    background-color: $black;
+    color: $white;
+    padding: 50px 0px 50px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // background-size: 170%;
+    background-image: linear-gradient(180deg, $black, rgba(0, 0, 0, 0.813), rgba(0, 0, 0, 0.493)), url("../images/tomatos.jpg");
+
+
+    .main-header {
+        width: fit-content;
+
+        hr {
+            border-color: $blue;
+        }
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: start;
+
+        div {
+
+            >svg {
+                width: 30px;
+            }
+
+            box-sizing: border-box;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 280px) {}
+
+@media screen and (min-width: 320px) {}
+
+// tablet landscape
+@media screen and (min-width: 481px) and (orientation: landscape) {
+    #about-sustainability {
+        background-position: right;
+        background-size: cover;
+        background-image: linear-gradient(90deg, $black, rgba(0, 0, 0, 0.635), rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0)), url("../images/tomatos.jpg");
+
+        .container {
+            display: flex;
+
+            ul {
+                flex: 1
+            }
+
+            >div {
+                flex: 4
+            }
+        }
+
+        li {
+
+            div {
+
+                >svg {
+                    width: 50px;
+                }
+
+                box-sizing: border-box;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (orientation: portrait) {
+    #about-sustainability {
+        background-position: bottom;
+        background-size: cover;
+        background-image: linear-gradient(180deg, $black, rgba(0, 0, 0, 0.905), rgba(0, 0, 0, 0.391)), url("../images/tomatos.jpg");
+    }
+
+}
+
+@media screen and (min-width: 769px) and (orientation: landscape) {}
+
+@media screen and (min-width: 1025px) {
+    #about-sustainability {
+        background-image: linear-gradient(90deg, $black, $black, rgba(0, 0, 0, 0.814), rgba(0, 0, 0, 0)), url("../images/tomatos.jpg");
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    #about-sustainability {
+        background-repeat: no-repeat;
+        background-size: 120%;
+        // background-size: cover;
+        background-position: right;
+        background-image: linear-gradient(90deg, $black, $black, rgba(0, 0, 0, 0.814), rgba(0, 0, 0, 0)), url("../images/tomatos.jpg");
+    }
+}

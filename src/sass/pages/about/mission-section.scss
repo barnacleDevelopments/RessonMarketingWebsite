@@ -1,0 +1,97 @@
+#about-page
+.about-mission {
+    background-color: $black;
+    padding: 70px 30px 70px 30px;
+    // height: 25vh;
+    background-image: linear-gradient(270deg, hsla(202, 68%, 54%, 0.5), rgba(58, 160, 217, 0.3), rgba(58, 160, 217, 0)), url("../images/mission_resson.jpg");
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    display: flex;
+    text-align: center;
+
+    // #3AA0D9
+
+  }
+  
+  .container {
+    margin-bottom: 0px;
+    
+    >div {
+      margin-bottom: 0px;
+    }
+  }
+  #about-page .header {
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.795);
+    border-radius: 4px;
+    h2 {
+        color: $white;
+    }
+  
+    q {
+        color: $white;
+        font-style: italic;
+        text-align: center;
+    }
+  
+    p {
+        color: $white;
+        font-style: italic;
+        quotes: initial;
+        margin-top: 10px;
+        text-align: center;
+    }
+    padding: 30px;
+
+    hr {
+        border-color: $blue;
+        margin-top: 2px;
+    }
+
+}
+
+// @media screen and (min-width: 280px) {}
+
+// @media screen and (min-width: 320px) {}
+
+// tablet landscape
+@media screen and (min-width: 481px) and (orientation: landscape) {
+  #about-page .about-mission {
+    text-align: left;
+
+    
+  
+      .container {
+        display: flex;
+
+        .header {
+          padding: 50px;
+          flex: 2;
+
+          h2 {
+            text-align: left;
+          }
+
+          p {
+            text-align: left;
+          }
+
+        }
+  
+        .empty-container {
+          flex: 4;
+        }
+       
+      }
+    }
+}
+
+@media screen and (min-width: 481px) and (orientation: portrait) {}
+
+@media screen and (min-width: 769px) and (orientation: landscape) {}
+
+@media screen and (min-width: 1025px) {}
+
+@media screen and (min-width: 1201px) {}

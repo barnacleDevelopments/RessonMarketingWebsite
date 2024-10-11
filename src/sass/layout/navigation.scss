@@ -1,0 +1,225 @@
+.navbar {
+    min-width: 280px;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 65px;
+    z-index: 10000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar nav .nav-list {
+    display: none;
+}
+
+.navbar .desktop-nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-logo {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: grey;
+    margin-top: 10px;
+
+    a>svg {
+        width: 100%
+    }
+}
+
+.navbar nav .hamburger-button {
+    height: 35px;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.navbar nav .hamburger-button>div {
+    height: 24px;
+    width: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.navbar nav .hamburger-button>div>div {
+    height: 3px;
+    background-color: grey;
+    border-radius: 3px;
+    width: 100%;
+
+}
+
+// mobile nav
+.mobile-nav {
+    position: fixed;
+    background-color: white;
+    top: 60px;
+    color: white;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding-top: 18px;
+    transform: translateY(-140%);
+    transition: transform .4s;
+    z-index: 99;
+}
+
+.open.mobile-nav {
+    transform: translateY(0%);
+}
+
+.open.navbar {
+    box-shadow: none;
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    justify-content: space-around;
+    transition: opacity 1s;
+    opacity: 0;
+    padding-bottom: 36px;
+}
+
+.open.mobile-nav .mobile-nav-list {
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 15px 10px -15px;
+}
+
+.mobile-nav-list>a {
+    text-decoration: none;
+    color: grey
+}
+
+.navbar .hamburger-button.open {
+    >div {
+        position: relative;
+        height: 35px;
+        width: 35px;
+        margin-top: 28px;
+    }
+
+    >div>div:nth-of-type(2) {
+        display: none;
+    }
+
+    >div>div:nth-of-type(1) {
+        transform: rotate(45deg);
+        position: absolute;
+        transition: transform .3s ease-out
+    }
+
+    >div>div:nth-of-type(3) {
+        transform: rotate(135deg);
+        position: absolute;
+        transition: transform .3s ease-out
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .navbar {
+        height: 80px;
+    }
+
+    .nav-list.nav-effect {
+        .nav-item {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            row-gap: 10px;
+            transition: color 300ms ease-in-out;
+            margin-top: 40px;
+
+            &::before {
+                content: "";
+                height: 3px;
+                border-bottom: 5px solid rgba(58, 159, 217, 0.291);
+                border-left: 9px solid transparent;
+                border-right: 9px solid transparent;
+                transform: rotate(180deg);
+                height: 20px;
+                width: 30px;
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+            &:hover {
+                color: #3aa0d9;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .nav-list:last-child {
+        width: fit-content;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .navbar .nav-logo {
+        width: 200px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+    .navbar nav .nav-list {}
+
+    .navbar nav .nav-list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .navbar nav .nav-list .nav-item {
+        text-decoration: none;
+        color: #858585;
+        font-weight: 400;
+        font-size: 0.844rem;
+    }
+
+
+    .navbar nav .hamburger-button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .navbar nav .nav-list {
+        gap: 40px;
+    }
+
+    .navbar nav .hamburger-button {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1401px) {
+    .navbar nav .nav-list {
+        gap: 50px;
+    }
+
+    .navbar nav .hamburger-button {
+        display: none;
+    }
+
+}

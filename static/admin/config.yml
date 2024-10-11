@@ -1,0 +1,63 @@
+backend:
+  name: github
+  repo: barnacleDevelopments/RessonWebsite
+  branch: master
+media_folder: static/assets
+public_folder: /assets
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Policy"
+        name: 'policy'
+        file: 'content/pages/policy.md'
+        fields: 
+          - { label: 'Title', name: title }
+          - { label: 'Content', name: content, widget: markdown }
+
+  - label: "Articles"
+    name: "articles"
+    folder: content/articles
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: Title, name: title  }
+      - { label: Content, name: content, widget: markdown, pattern: ['.{500,}', "Must have at least 500 characters"] }
+      - { label: Author, name: author }
+      - { label: "Date", name: "date", widget: "date"}
+      - { label: "Keywords", name: "keywords", widget: "string"}
+
+  - label: "News"
+    name: "news"
+    folder: content/news
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: Title, name: title  }
+      - { label: Content, name: content, widget: markdown, pattern: ['.{100,200}', "Must have at least 100 characters"] }
+      - { label: "Date", name: "date", widget: "date"}
+      - { label: "Link", name: 'link'}
+
+  - label: "Partners"
+    name: "partners"
+    folder: content/partners
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: Title, name: title  }
+      - { label: Partner URL, name: partnerURL }
+      - { label: Image, name: thumnail, widget: image}
+
+  - label: "Team"
+    name: "team"
+    folder: content/team
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    identifier_field: 'name'
+    fields:
+      - { label: Name, name: name }
+      - { label: Role, name: role }
+      - { label: About, name: about, pattern: ['.{30,100}', "Must have at least 100 characters"] }
+      - { label: Image, name: thumnail, widget: image}
+
+

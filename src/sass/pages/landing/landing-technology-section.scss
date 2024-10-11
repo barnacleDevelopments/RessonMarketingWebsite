@@ -1,0 +1,133 @@
+.landing-technology-section {
+    padding: 60px 25px;
+    background-color: white;
+
+    h2 {
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    >.technology-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    >.technology-list>.technology-item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: 150px;
+        }
+
+        h3 {
+            margin-bottom: 18px;
+            margin-top: 18px;
+        }
+
+        p:nth-of-type(1) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 280px) {}
+
+@media screen and (min-width: 320px) {}
+
+// tablet landscape
+@media screen and (min-width: 481px) and (orientation: landscape) {
+    .landing-technology-section {
+        >.technology-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 80px;
+        }
+
+        >.technology-list>.technology-item {
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 50px;
+
+            svg {
+                width: 150px;
+            }
+
+        }
+
+        >.technology-list>.technology-item:nth-child(odd) {
+            flex-flow: row-reverse;
+        }
+
+        >.technology-list>.technology-item>div {
+            flex: 3;
+
+        }
+
+
+    }
+}
+
+@media screen and (min-width: 769px) and (orientation: landscape) {
+    .landing-technology-section {
+        >.technology-list>.technology-item {
+
+            >div {
+                width: 400px;
+            }
+
+
+            svg {
+                width: 230px;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .landing-technology-section {
+        >.technology-list>.technology-item {
+
+            >div {
+                width: 500px;
+            }
+
+
+            svg {
+                width: 250px;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .landing-technology-section {
+        >.technology-list {
+            gap: 70px;
+
+            .technology-item {
+
+                >div {
+                    width: 600px;
+                }
+
+
+                svg {
+                    width: 250px;
+                }
+
+            }
+        }
+    }
+}

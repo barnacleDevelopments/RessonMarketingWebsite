@@ -1,0 +1,120 @@
+section.about-hero {
+    background-color: white;
+    width: 100%;
+    margin-top: 65px;
+    height: 60vh;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0)), url("../images/about_resson.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: top right;
+    background-position: 25% 20%;
+    display: flex;
+    align-items: center;
+
+    .hero-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        color: $white;
+        width: fit-content;
+        justify-content: flex-start;
+
+        h1 {
+            text-align: center;
+            line-height: 1;
+
+        }
+
+        hr {
+            border-color: $blue;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 481px) {
+
+    section.about-hero {
+        height: 40vh;
+        margin-top: 80px;
+        // background-position: top left;
+        background-position: 25% 20%;
+
+        .hero-content {
+            width: 420px;
+            text-align: left;
+
+            h1 {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    section.about-hero {
+        background-image: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.588), rgba(0, 0, 0, 0)), url("../images/about_resson.jpg");
+        background-position: 25% 20%;
+
+        .hero-content {
+            text-align: left;
+
+            h1 {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    section.about-hero {
+        background-image: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.664),  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/about_resson.jpg");
+        background-position: 45% 20%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    section.about-hero {
+        background-image: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.681), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/about_resson.jpg");
+        background-position: 75% 20%;
+        height: 60vh;
+
+        .hero-content {
+            text-align: left;
+
+            h1 {
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+// section.about-hero div.hero-content {
+//     width: 80%;
+//     text-align: center;
+//     margin: 0px auto;
+//     padding-top: 60px;
+//     display: flex;
+//     flex-direction: column;
+
+//     h1 {
+//         margin-bottom: 15px;
+//         font-weight: 500;
+//         color: $text-black;
+//     }
+
+//     hr {
+//         border-color: $blue;
+//         width: 60%;
+//         margin: 0px;
+//     }
+
+// }

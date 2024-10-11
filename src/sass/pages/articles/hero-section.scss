@@ -1,0 +1,54 @@
+section.article-hero {
+    background-color: white;
+    height: 50vh;
+    background-image: linear-gradient(180deg, $black, rgba(255, 255, 255, 0)), url("../images/tablet_150.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin-top: 65px;
+
+    .hero-content {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        color: $white;
+        width: fit-content;
+        justify-content: flex-start;
+
+        h1 {
+            text-align: left;
+            line-height: 1;
+
+        }
+
+        hr {
+            border-color: $blue;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 280px) {}
+
+@media screen and (min-width: 320px) {}
+
+@media screen and (min-width: 481px) {
+    section.article-hero {
+
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width: 769px) {}
+
+@media screen and (min-width: 1025px) {}
+
+@media screen and (min-width: 1201px) {}

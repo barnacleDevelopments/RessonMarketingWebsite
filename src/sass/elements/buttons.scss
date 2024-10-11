@@ -1,0 +1,53 @@
+.btn-primary {
+    background-color: $blue;
+    color: $text-white;
+    line-height: 16px;
+    padding: 10px 12px;
+    font-size: .9rem;
+    border: none;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+
+    svg {
+        width: 5.5px;
+        margin-left: 3px;
+        margin-bottom: .5px;
+        transition: transform .1s ease-in-out;
+    }
+}
+
+.btn-contact {
+    border: none;
+    color: $white;
+    background-color: $blue;
+    padding: 13px 20px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+}
+
+.btn-primary.link {
+    svg {
+        width: 4.4px;
+        margin-top: 4px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+
+    .btn-contact:hover,
+    .btn-primary:hover {
+        background-color: #62b6da;
+    }
+
+
+
+    .btn-primary.link:hover svg {
+        transform: translate(1px);
+    }
+
+
+}
