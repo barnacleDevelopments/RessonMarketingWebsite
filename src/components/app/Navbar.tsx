@@ -115,12 +115,16 @@ const Navbar = () => {
             fontWeight: 800,
             color: "white",
             padding: "10px 10px 10px 10px",
+            position: "fixed",
+            bottom: 0,
+            left: 0,
+            width: "100%",
           }}
         >
-          This is an unofficial demonstration of the Resson Aerospace website.
-          It showcases my work and is not affiliated with, nor endorsed by,
-          Resson or any of its affiliates. Therefore, some functionality may
-          also be limited.
+          This is an unofficial demonstration of N.Johnstone&Co website. It
+          showcases my work and is not affiliated with, nor endorsed by,
+          N.Johnstone&Co or any of its affiliates. Therefore, some functionality
+          may also be limited.
         </div>
       </div>
       <div>
